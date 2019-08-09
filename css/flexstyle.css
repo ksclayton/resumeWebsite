@@ -1,0 +1,53 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:15px
+	line-height:1.5;
+	padding:0;
+	margin:0;
+	background-color:#f4f4f4; 
+}
+
+header{
+	background:#35424a;
+	color:#ffffff;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom:#e8491d 3px solid;
+}
+
+header a{
+	color:#ffffff;
+	text-decoration: none;
+	text-transform: uppercase; 
+	font-size: 16px;
+}
+
+header li{
+	float:left;
+	display:inline;
+	padding: 0 20px 0 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  nav {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  nav {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
