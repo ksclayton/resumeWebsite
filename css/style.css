@@ -22,7 +22,17 @@ body{
 	margin-bottom:10px;
 	border: 2px solid black;
 	border-radius: 15px 50px 30px 15px;
-	width:50%;
+	width:90%;
+}
+
+.light{
+	padding:15px;
+	background:#bdcacf;
+	margin-top:10px;
+	margin-bottom: 10px;
+	border: 2px solid black;
+	border-radius: 15px 50px 30px 15px;
+	width:90%;
 }
 
 /* Header **/
@@ -120,18 +130,24 @@ article h2 {
 	padding-left: 20px;
 }
 
-.sidebyside{
-	float:left;
-	width: 45%;
-	margin: 5px;
+.b {
+	font-weight: bold;
 }
 
-.page-title {
-	border: 2px solid #e8491d;
-	border-radius: 5px;
-	width: 30%;
-	padding-left: 10px;
+.u {
+	text-decoration: underline;
 }
+.left{
+	float: left;
+	width: 48%;
+	padding: 2px;
+}
+.right{
+	float:right;
+	width: 48%;
+	padding: 2px;
+}
+
 /* Sidebar */
 aside #sidebar{
 	float:center-right;
@@ -150,6 +166,12 @@ footer{
 }
 
 /* Media Queries */
+@media(max-width: 1116px){
+	.left, .right{
+		float: left;
+		width:90%;
+	}
+}
 @media(max-width: 768px){
 	header {
 		float:none;
@@ -157,7 +179,8 @@ footer{
 		width:100%;
 		padding-bottom:20px;
 	}
-	#boxes {
+	#boxes .box{
+		margin: auto;
 		float: none;
 	}
 }
